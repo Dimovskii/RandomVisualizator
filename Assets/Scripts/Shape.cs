@@ -6,12 +6,12 @@ public class Shape : MonoBehaviour
 {
     private Text _outputTimer;
     private float _lifeTime;
-    private Spawner _spawner; // пустая переменная нужно получить ссылку
+    private Spawner _spawner; // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     private Sprite _sprite;
 
     public void Init(float lifeTime, Spawner spawner)
     {
-        _spawner = spawner; // получаем ссылку
+        _spawner = spawner; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         _spawner.OnShapeChanged += SetSprite;
 
         _lifeTime = lifeTime;
@@ -20,7 +20,7 @@ public class Shape : MonoBehaviour
 
     private void SetSprite(Sprite sprite)
     {
-        _spawner.GetComponent<Image>().sprite = sprite;
+        _spawner.GetComponent<Image>().sprite = sprite;//СѓСЃС‚Р°РЅРѕРІРёС‚СЊ СЃРїСЂР°Р№С‚
     }
 
     private void Awake()
