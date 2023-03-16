@@ -25,7 +25,7 @@ public class Shape : MonoBehaviour
 
     private void Awake()
     {
-        _outputTimer = GetComponentInChildren<Text>();
+        _outputTimer = GetComponentInChildren<Text>();//added  component text us children
     }
 
     private void Update()
